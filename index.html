@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="./output.css" rel="stylesheet">
+
     <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     .w3-row-padding img {margin-bottom: 12px}
@@ -21,23 +24,28 @@
 <body class="w3-black">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small  w3-center overflow-x-hidden">
   <!-- Avatar image in top left corner -->
-  <img src="MY/iii.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
+  <a href="#" class="w3-bar-item w3-button w3-padding-small w3-black">
+    <i class="fa fa-home w3-xxmedium"></i>
     <p>HOME</p>
   </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
+  <a href="#about" class="w3-bar-item w3-button  w3-hover-black">
+    <i class="fa fa-user w3-xxmedium"></i>
+    <p>ABOUT ME</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
+  <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-laptop w3-xxmedium"></i>
+    <p>Skills</p>
   </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-bars w3-xxmedium"></i>
+    <p>PROJECTS</p>
+  </a>
+ 
+
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
+    <i class="fa fa-envelope w3-xxmedium"></i>
     <p>CONTACT</p>
   </a>
 </nav>
@@ -46,8 +54,10 @@
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT ME</a>
+    <a href="#skills" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="#myresume" class="w3-bar-item w3-button" style="width:25% !important">RESUME</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -55,68 +65,91 @@
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Md. Ashraful Alam.</h1>
-    <p>Programer and Web Designer.</p>
-    <img src="MY/iii.jpg" alt="boy" class="w3-image" width="992" height="1108">
+ 
+
+  <header class="w3-container  w3-center w3-black" id="home">
+<div>
+  <h1 class="w3-big"><span class="w3-hide-small ">Hi, </span><span class="w3-hide-small">I'm</span>
+    <br>
+    Md. Ashraful Alam.</h1>
+  <p>MERN Stack Developer</p>
+</div>
+<div class="profile">    <img src="MY/my.png" alt="boy" class="w3-image" width="200" height="108" justify-content="right">
+</div>
   </header>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Name</h2>
+    <h2 class="w3-text-light-grey">About Me</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>This me
+    <p class="w3-ul  w3-opacity w3-hover-opacity-off" >I'm a Passionate MERN Stack Developer with a prudence for crafting robust and innovative web applications. Armed with expertise in MongoDB, Express.js, React.js, and Node.js, I thrive on translating client needs into seamless, user-centric digital experiences. My journey encompasses designing responsive front-end interfaces, architecting scalable back-end systems, and ensuring smooth integration across the entire tech stack. Adept at problem-solving and staying abreast of emerging technologies, I bring a keen eye for detail to every project. Committed to continuous learning, I embrace challenges, collaborate effectively, and contribute to the evolution of cutting-edge web development.
     </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Programer</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
+ 
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
+        <span class="w3-xlarge">1+</span><br>
         Partners
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
+        <span class="w3-xlarge">5+</span><br>
         Projects Done
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
+        <span class="w3-xlarge">4+</span><br>
         Happy Clients
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
+        <span class="w3-xlarge">10+</span><br>
         Meetings
       </div>
     </div>
+<!-- my resume -->
+<div id="myresume">
+  <h2 class="w3-text-light-grey">My Resume</h2>
 
     <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
+     
+      <i class="fa fa-download"><link rel="import" href="MY/ASHRAFUL CURRICULUM VITAE.pdf"></i> Download Resume
     </button>
+</div>
+<!-- end -->
     
+    
+
+        <!-- My skill sec -->
+        <div id="skills" >
+          <h3 class="w3-padding-16 w3-text-light-grey">Skills</h3>
+        <p class="w3-wide">MongoDB</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+        </div>
+        <p class="w3-wide">Express Js.</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+        </div>
+        <p class="w3-wide">React Js.</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+        </div>
+        <p class="w3-wide">Node Js.</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+        </div><br>
+        
+        </div>
+        <!-- end -->
     <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <h3 class="w3-padding-16 w3-text-light-grey">Talent Charge</h3>
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half w3-margin-bottom">
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
           <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Programer</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">Single Page Design</li>
+          <li class="w3-padding-16">Portfolio/ Company Website</li>
           <li class="w3-padding-16">
             <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
+            <span class="w3-opacity">per hour</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
             <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
@@ -127,13 +160,11 @@
       <div class="w3-half">
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
           <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Programer</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">Multiple Page Design</li>
+          <li class="w3-padding-16">E-commerce Websites</li>
           <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
+            <h2>$ 80</h2>
+            <span class="w3-opacity">per day</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
             <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
@@ -144,40 +175,50 @@
     </div>
     
     <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Osaka Education.</span> CO Founder at language schol.</p>
-    <p>Md. Ashraful Alam saved us from a web disaster.</p><br>
-    
-    <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Osaka Education.</span> CO Founder at language schol.</p>
-    <p>No one is better than Md. Ashraful Alam</p>
+    <!-- <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <img src="MY/logo osaka.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Osaka Education.</span> CO Founder at language school.</p>
+    <p>No one is better than Md. Ashraful Alam</p> -->
   <!-- End About Section -->
   </div>
   
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
+  <!-- projects Section -->
+  <div class="w3-padding-64 w3-content" id="projects">
+    <h2 class="w3-text-light-grey">Demo PROJECTS</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <img src="MY/2022_02_19_04_44_IMG_3176.JPG" style="width:100%">
-        <img src="MY/2022_02_19_04_44_IMG_3172.JPG" style="width:100%">
-        <img src="MY/2021_06_11_01_07_IMG_8311.JPG" style="width:100%">
-        <img src="MY/2023_04_22_05_35_IMG_3253.JPG" style="width:100%">
+        <img src="MY/p11.png" style="width:100%">
+        <a href="https://final-assignment-eac2a.firebaseapp.com">Click here to know more about this project</a>
+        <h5>Light Studio</h5>
+        <img src="MY/p1.png" style="width:100%">
+        <a href="https://ashrafulalamm.github.io/Watch-Clinic/">Click here to know more about this project</a>
+        <h5>Watch Clinic</h5>
+        <img src="MY/p3.png" style="width:100%"> 
+        <a href="https://ashrafulalamm.github.io/SASSLAND--23/">Click here to know more about this project</a>
+        <h5>Sassland</h5>      
+        <img src="MY/p5.png" style="width:100%">
+        <a href="https://ashrafulalamm.github.io/HOT-GADGETS/">Click here to know more about this project</a>
+        <h5>Hot Gadgets</h5>
       </div>
 
       <div class="w3-half">
-        <img src="MY/IMG_5592.JPG" style="width:100%">
-        <img src="MY/rexa.JPG" style="width:100%">
-        <img src="MY/IMG_0803.JPG" style="width:100%">
+        <img src="MY/p2.png" style="width:100%" >
+        <a href="https://ashrafulalamm.github.io/Watch-Clinic/">Click here to know more about this project</a>
+        <h5>Watch Clinic</h5>        
+        <img src="MY/p4.png" style="width:100%">
+        <a href="https://ashrafulalamm.github.io/calculator">Click here to know more about this project</a>
+        <h5>Calculator</h5>
+        <img src="MY/p6.png" style="width:100%">
+        <a href="https://ashrafulalamm.github.io/E-School">Click here to know more about this project</a>
+        <h5>E-school</h5>
         <img src="MY/2022_02_22_04_19_IMG_3390.JPG" style="width:100%">
       </div>
     <!-- End photo grid -->
     </div>
-  <!-- End Portfolio Section -->
+  <!-- End projects Section -->
   </div>
 
   <!-- Contact Section -->
@@ -186,41 +227,66 @@
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Narayanganj, Bangladesh</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone:+88 01615368603</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:ashrafulalamm99@gmail.com</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxmedium w3-margin-right"></i>Narayanganj, Bangladesh</p>
+      <p><a href="tel:+8801615368603"><i class="fa fa-phone fa-fw w3-text-white w3-xxmedium w3-margin-right"></i></a> Phone:+88 01615368603</p>
+      <p><a href="#"><i class="fa fa-envelope fa-fw w3-text-white w3-xxmedium w3-margin-right"></i></a> </i> Email:ashrafulalamm99@gmail.com</p>
     </div><br>
     <p>Let's get in touch. Send me a message:</p>
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+    <form onsubmit="sendEmail(); reset(); return false;" >
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required ></p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="Email" required ></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required ></p>
+      <input class="w3-input w3-padding-16" id="message" placeholder="How can i help you?"  >
+      
+        <button class="w3-button w3-light-grey w3-padding-small" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
-      </p>
+      
     </form>
   <!-- End Contact Section -->
   </div>
   
 <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"> <link rel="stylesheet" href="https://www.facebook.com/profile.php?id=100004184628491"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
- <p class="w3-small">This website was made me. Make your own website by me!</p>
- <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.facebook.com/profile.php?id=100004184628491" target="_blank">Contact Me</a> 
+<footer class="w3-content w3-padding-0 w3-margin-50 w3-text-grey w3-xmedium ">
+  
+<a href="https://www.facebook.com/profile.php?id=100004184628491" class="fa fa-facebook w3-center" ></a>
+<a href="https://www.instagram.com/its_ibrahim16/" class="fa fa-instagram  w3-center"></a>
+<a href="https://github.com/ashrafulalamm" class="fa fa-github  w3-center"></a>
+<a href="http://linkedin.com/in/md-ashraful-alam-175789286"  class="fa fa-linkedin"  ></a>
+<a href="#"  class="fa fa-envelope" style="color: #f49208;"></a>
+<a href="https://stackoverflow.com/users/23592815/md-ashraful-alam"  class="fa fa-stack-overflow" style="color: #a0e521;"> </a>
+
+
+
+ <p class="w3-small">This portfolio website was made by me. Make your own website by me!</p>
+ <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="+8801615368603" target="_blank">Contact Me</a>  -->
+ <p><a class="w3-button w3-round-xxlarge"  href="tel:+8801615368603">Contact Me</a></p>
+
  <!-- End footer -->
 </footer>
 
 <!-- END PAGE CONTENT -->
 </div>
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "ashrafulalamm99@gmail.com",
+    Password : "1xibrahim02",
+    To : 'mi7757456@gmail.com',
+    From : document.getElementById( "email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name: " + document.getElementById("name").value
+    + "<br>  Email: " + document.getElementById("email").value
+    + "<br>  Subject: " + document.getElementById("subject").value
+    + "<br> Messege: " + document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Successfully")
+);
+  }
+  
+</script>
 </body>
 </html>
